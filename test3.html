@@ -27,13 +27,9 @@
 
     <script>
         function filterEvenNumbers() {
-            // Get the input numbers from the text box and split them into an array
             let numbers = document.getElementById('inputNumbers').value.split(',').map(Number);
-            
-            // Filter the array to include only even numbers
+        
             let evenNumbers = numbers.filter(num => num % 2 === 0);
-            
-            // Display the result in the paragraph with id 'result'
             document.getElementById('result').innerText = "Even numbers: " + evenNumbers.join(', ');
         }
     </script>
