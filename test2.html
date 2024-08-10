@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>String Reverser</h1>
+    <p>Enter a string to reverse it:</p>
+    
+    <input type="text" id="inputString" placeholder="Type your string here">
+    <button onclick="reverseString()">Reverse String</button>
+    
+    <p id="result"></p>
+
+    <script>
+        function reverseString() {
+            let str = document.getElementById('inputString').value;
+
+            let reversedStr = str.split("").reverse().join("");
+            
+            document.getElementById('result').innerText = "Reversed string: " + reversedStr;
+        }
+    </script>
+
+</body>
+</html>
